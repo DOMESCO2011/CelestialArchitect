@@ -1,0 +1,52 @@
+[
+  {
+    "id": "hubble",
+    "name": "Hubble Space Telescope",
+    "type": "observation",
+    "mass_kg": 11110,
+    "power_kw": 2.8,
+    "modules": ["camera", "transmitter", "solar_array"],
+    "cost_musd": 11110,
+    "unlocked": true
+  },
+  {
+    "id": "iss",
+    "name": "International Space Station",
+    "type": "habitation",
+    "mass_kg": 420000,
+    "power_kw": 120,
+    "modules": ["habitat", "solar_array", "docking_port"],
+    "cost_musd": 420000,
+    "unlocked": false
+  },
+  {
+    "id": "starlink",
+    "name": "Starlink v1",
+    "type": "communication",
+    "mass_kg": 260,
+    "power_kw": 1.5,
+    "modules": ["antenna", "solar_array"],
+    "cost_musd": 260,
+    "unlocked": true
+  },
+  {
+    "id": "landsat",
+    "name": "Landsat 9",
+    "type": "observation",
+    "mass_kg": 2700,
+    "power_kw": 3.6,
+    "modules": ["camera", "data_storage", "solar_array"],
+    "cost_musd": 2700,
+    "unlocked": false
+  },
+  {
+    "id": "gps_block_iii",
+    "name": "GPS Block III",
+    "type": "navigation",
+    "mass_kg": 3880,
+    "power_kw": 4.5,
+    "modules": ["atomic_clock", "transmitter", "solar_array"],
+    "cost_musd": 3880,
+    "unlocked": false
+  }
+]

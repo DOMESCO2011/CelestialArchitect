@@ -1,12 +1,20 @@
 # --- engine/gamestate.py ---
 
+import random
+
 class GameState:
     def __init__(self):
-        self.running = True
-        self.mouse_pos = (0, 0)
-        self.selected_module = None
+        self.money = 100_000_000  # kezdőtőke
+        self.date = "2025-01-01"  # induló dátum
+        self.selected_module = None  # épp épített elem
+        self.selected_constellation = None
+        self.sky_unlocked = {}  # konstellációk nyitása
+        self.modules = []  # összerakott műholdak
         self.placed_modules = []
-        self.weather_state = "clear"
+        self.mode = "view"  # view / build / launch stb.
+        self.weather_state = "clear"  # vagy "cloudy", "stormy", stb.
 
+    
     def update(self):
-        pass  # Ide jöhetnek az időalapú változások, animációk
+        pass
+
