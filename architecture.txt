@@ -1,0 +1,35 @@
+celestial_architect/
+│
+├── main.py                          # Belépési pont – inicializálás
+├── config/
+│   └── settings.py                  # Alapbeállítások, konstansok
+│
+├── assets/
+│   ├── sprites/
+│   │   ├── modules/                 # Műholdmodulok pixelartja
+│   │   ├── stars/                   # Csillagképek, csillagok
+│   │   └── gui/                     # UI elemek (gombok, panelek)
+│   └── fonts/
+│
+├── data/
+│   ├── sky_map.json                # Csillagképek, Nap, Hold, csillagok
+│   └── satellites.json            # Elérhető modulok, hajtóművek, stb.
+│
+├── engine/
+│   ├── __init__.py
+│   ├── gamestate.py                # Játékállapot kezelése
+│   ├── renderer.py                 # Pygame rajzoló modul
+│   ├── physics.py                  # Hajtóművek, pálya-szimuláció
+│   ├── sky_logic.py                # Égbolt/idő/időjárás kezelés
+│   └── input.py                    # Drag & drop, egér, billentyű
+│
+├── gui/
+│   ├── __init__.py
+│   ├── hud.py                      # HUD elemek (pl. bal felső kijelző)
+│   ├── launcher_editor.py         # Műholdtervező szerkesztő
+│   └── weather_overlay.py         # Időjárás réteg
+│
+└── utils/
+    ├── loader.py                   # JSON betöltő
+    └── helpers.py                  # Matematikai/statisztikai segéd
+

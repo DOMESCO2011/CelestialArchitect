@@ -1,0 +1,92 @@
+[
+  {
+    "filename": "aquarius.png",
+    "filename_c": "aquarius_c.png",
+    "name": "Aquarius",
+    "unlocked": false,
+    "ra": 336.0,
+    "dec": -12.0,
+    "primary_star": "Sadalmelik",
+    "importance": "calibration"
+  },
+  {
+    "filename": "ares.png",
+    "filename_c": "ares_c.png",
+    "name": "Ares",
+    "unlocked": false,
+    "ra": 28.0,
+    "dec": 7.0,
+    "primary_star": "Hamal",
+    "importance": "calibration"
+  },
+  {
+    "filename": "capricornus.png",
+    "filename_c": "capricornus_c.png",
+    "name": "Capricornus",
+    "unlocked": false,
+    "ra": 310.0,
+    "dec": -17.0,
+    "primary_star": "Deneb Algedi",
+    "importance": "calibration"
+  },
+  {
+    "filename": "gemini.png",
+    "filename_c": "gemini_c.png",
+    "name": "Gemini",
+    "unlocked": false,
+    "ra": 113.0,
+    "dec": 23.0,
+    "primary_star": "Pollux",
+    "importance": "calibration"
+  },
+  {
+    "filename": "leo.png",
+    "filename_c": "leo_c.png",
+    "name": "Leo",
+    "unlocked": false,
+    "ra": 152.0,
+    "dec": 12.0,
+    "primary_star": "Regulus",
+    "importance": "calibration"
+  },
+  {
+    "filename": "libra.png",
+    "filename_c": "libra_c.png",
+    "name": "Libra",
+    "unlocked": false,
+    "ra": 225.0,
+    "dec": -15.0,
+    "primary_star": "Zubenelgenubi",
+    "importance": "calibration"
+  },
+  {
+    "filename": "scorpio.png",
+    "filename_c": "scorpio_c.png",
+    "name": "Scorpio",
+    "unlocked": false,
+    "ra": 247.0,
+    "dec": -25.0,
+    "primary_star": "Antares",
+    "importance": "calibration"
+  },
+  {
+    "filename": "serpens.png",
+    "filename_c": "serpens_c.png",
+    "name": "Serpens",
+    "unlocked": false,
+    "ra": 236.0,
+    "dec": 5.0,
+    "primary_star": "Unukalhai",
+    "importance": "calibration"
+  },
+  {
+    "filename": "virgo.png",
+    "filename_c": "virgo_c.png",
+    "name": "Virgo",
+    "unlocked": false,
+    "ra": 201.0,
+    "dec": -10.0,
+    "primary_star": "Spica",
+    "importance": "calibration"
+  }
+]
