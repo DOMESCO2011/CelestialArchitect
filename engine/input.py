@@ -2,18 +2,16 @@
 
 import pygame
 
+# input.py
+
 def handle_event(event, state):
     if event.type == pygame.QUIT:
-        state.running = False
-    elif event.type == pygame.MOUSEMOTION:
+        pygame.quit()
+        exit()
+
+    if event.type == pygame.MOUSEMOTION:
         state.mouse_pos = event.pos
-    elif event.type == pygame.MOUSEBUTTONDOWN:
-        if event.button == 1:
-            if state.selected_module:
-                state.placed_modules.append({
-                    "type": state.selected_module,
-                    "pos": state.mouse_pos
-                })
-    elif event.type == pygame.KEYDOWN:
-        if event.key == pygame.K_ESCAPE:
-            state.selected_module = None
+
+    if event.type == pygame.MOUSEBUTTONDOWN:
+        if hasattr(state, 'editor_button_rect') and state.editor_button_rect.collidepoint(event.pos):
+            state.mode = "editor"  # váltsunk editor módba

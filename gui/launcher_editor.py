@@ -1,7 +1,10 @@
 import pygame
+from config import settings
+import os
 
-PANEL_WIDTH = 200  # bal oldali panel szélessége
-MODULE_SIZE = 48   # minden komponens ikonmérete (px)
+PANEL_WIDTH = 350  # bal oldali panel szélessége
+MODULE_SIZE = 32   # minden komponens ikonmérete (px)
+
 
 def draw(state, screen, modules_data):
     # Háttér
@@ -18,7 +21,7 @@ def draw(state, screen, modules_data):
 
 def draw_module_panel(screen, modules_data, state):
     pygame.draw.rect(screen, (20, 20, 40), (0, 0, PANEL_WIDTH, screen.get_height()))
-    font = pygame.font.SysFont(None, 18)
+    font = pygame.font.SysFont(settings.FONT_NAME, settings.FONT_SIZE)
 
     for i, module in enumerate(modules_data):
         x = 10
@@ -42,3 +45,12 @@ def draw_dragging(screen, state):
     if state.dragging_module:
         pos = pygame.mouse.get_pos()
         screen.blit(state.dragging_module["surface"], (pos[0] - MODULE_SIZE // 2, pos[1] - MODULE_SIZE // 2))
+
+def load_module_images(modules_data):
+    images = {}
+    for module in modules_data:
+        filename = module["image"]
+        path = os.path.join("assets", "modules", filename)
+        image = pygame.image.load(path).convert_alpha()
+        images[module["name"]] = pygame.transform.scale(image, (32, 32))  # Méret igazítása
+    return images

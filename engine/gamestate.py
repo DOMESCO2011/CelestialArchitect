@@ -13,6 +13,10 @@ class GameState:
         self.placed_modules = []
         self.mode = "view"  # view / build / launch stb.
         self.weather_state = "clear"  # vagy "cloudy", "stormy", stb.
+        self.mode = "sim"  # vagy "menu", "editor" stb.
+        self.mouse_pos = (0, 0)
+        self.editor_button_rect = None
+        self.dragging_module = None
 
     
     def update(self):

@@ -21,6 +21,7 @@ def main():
     # Betöltések
     sky_data = loader.load_json("data/sky_map.json")
     modules_data = loader.load_json("data/satellites.json")
+    module_images = loader.load_module_images(modules_data)
 
     # Fő ciklus
     running = True
@@ -30,10 +31,14 @@ def main():
 
         sky_logic.update(state)
         state.update()
-        
-        renderer.draw_all(screen, state, sky_data, modules_data)
-        hud.draw(state, screen)
-        weather_overlay.draw(screen, state)
+
+        # Módválasztás
+        if state.mode == "editor":
+            launcher_editor.draw(state, screen, modules_data)
+        else:
+            renderer.draw_all(screen, state, sky_data, modules_data, module_images)
+            hud.draw(state, screen)
+            weather_overlay.draw(screen, state)
 
         pygame.display.flip()
         clock.tick(settings.FPS)

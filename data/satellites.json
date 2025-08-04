@@ -1,33 +1,10 @@
 [
   {
-    "id": "hubble",
-    "name": "Hubble Space Telescope",
-    "type": "observation",
-    "mass_kg": 11110,
-    "power_kw": 2.8,
-    "modules": ["camera", "transmitter", "solar_array"],
-    "cost_musd": 11110,
-    "unlocked": true
-  },
-  {
-    "id": "iss",
-    "name": "International Space Station",
-    "type": "habitation",
-    "mass_kg": 420000,
-    "power_kw": 120,
-    "modules": ["habitat", "solar_array", "docking_port"],
-    "cost_musd": 420000,
-    "unlocked": false
-  },
-  {
-    "id": "starlink",
     "name": "Starlink v1",
-    "type": "communication",
-    "mass_kg": 260,
-    "power_kw": 1.5,
-    "modules": ["antenna", "solar_array"],
-    "cost_musd": 260,
-    "unlocked": true
+    "category": "internet",
+    "mass": 227,
+    "cost": 500,
+    "icon": "starlink v1.png"
   },
   {
     "id": "landsat",
